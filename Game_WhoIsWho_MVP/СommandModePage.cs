@@ -56,10 +56,15 @@ namespace Game_WhoIsWho_MVP
         public void Quection()
         {
             if (((correctAnswers + wrongAnswers) % 2 == 0) || (correctAnswers + wrongAnswers == 0))
-                label4.Text = "Ход: " + textBox1.Text;
-            else label4.Text = "Ход: " + textBox2.Text;
+                label3.Text = "Ход: " + textBox1.Text;
+            else label3.Text = "Ход: " + textBox2.Text;
 
-            label3.Text = Read.ReadLine();
+            label4.Text = Read.ReadLine();
+            label5.Text = Read.ReadLine();
+            label6.Text = Read.ReadLine();
+            label7.Text = Read.ReadLine();
+            label8.Text = Read.ReadLine();
+            label9.Text = Read.ReadLine();
 
             radioButton1.Text = Read.ReadLine();
             radioButton2.Text = Read.ReadLine();
@@ -95,9 +100,14 @@ namespace Game_WhoIsWho_MVP
             label1.Visible = false;
             label2.Visible = false;
             NameWindow.Visible = false;
-            label3.Visible = true;
             label4.Visible = true;
-            label4.Text = "Ход: " + textBox1.Text;
+            label5.Visible = true;
+            label6.Visible = true;
+            label7.Visible = true;
+            label8.Visible = true;
+            label9.Visible = true;
+            label3.Visible = true;
+            label3.Text = "Ход: " + textBox1.Text;
             textBox1.Visible = false;
             textBox2.Visible = false;
             button3.Visible = true;
@@ -111,8 +121,13 @@ namespace Game_WhoIsWho_MVP
             button2.Text = "Выйти из режимы";
             button3.Text = "Следующий вопрос";
             button3.Visible = false;
-            label3.Visible = false;
             label4.Visible = false;
+            label3.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
             radioButton1.Visible = false;
             radioButton2.Visible = false;
 
@@ -126,7 +141,7 @@ namespace Game_WhoIsWho_MVP
             if (selectResponse == correctAnswersNumber)
             {
                 correctAnswers++;
-                if (label4.Text == "Ход: " + textBox1.Text)
+                if (label3.Text == "Ход: " + textBox1.Text)
                     firstCommandCorrectAnswers++;
                 else secondCommandCorrectAnswers++;
             }
@@ -134,20 +149,26 @@ namespace Game_WhoIsWho_MVP
             if (selectResponse != correctAnswersNumber)
             {
                 wrongAnswers++;
-                arrayInformation[wrongAnswers] = label3.Text;
-                if (label4.Text == "Ход: " + textBox1.Text)
+                arrayInformation[wrongAnswers] = label4.Text;
+                if (label3.Text == "Ход: " + textBox1.Text)
                 {
                     firstCommandWrongAnswers++;
-                    arrayfirstCommandWrongAnswers[firstCommandWrongAnswers] = label3.Text;
+                    arrayfirstCommandWrongAnswers[firstCommandWrongAnswers] = label4.Text;
                 }
                 else
                 {
                     secondCommandWrongAnswers++;
-                    arraysecondCommandWrongAnswers[secondCommandWrongAnswers] = label3.Text;
+                    arraysecondCommandWrongAnswers[secondCommandWrongAnswers] = label4.Text;
                 }
             }
             if (button3.Text == "Начать викторину")
             {
+                label4.Visible = true;
+                label5.Visible = true;
+                label6.Visible = true;
+                label7.Visible = true;
+                label8.Visible = true;
+                label9.Visible = true;
                 secondCommandCorrectAnswers = 0;
                 firstCommandCorrectAnswers = 0;
                 firstCommandWrongAnswers = 0;
@@ -164,10 +185,15 @@ namespace Game_WhoIsWho_MVP
 
                 radioButton1.Visible = false;
                 radioButton2.Visible = false;
+                label5.Visible = false;
+                label6.Visible = false;
+                label7.Visible = false;
+                label8.Visible = false;
+                label9.Visible = false;
 
                 if (firstCommandCorrectAnswers > secondCommandCorrectAnswers)
                 {
-                    label3.Text = String.Format("Викторина закончена. \n" +
+                    label4.Text = String.Format("Викторина закончена. \n" +
                     "Выйграла команда: {0} \n" +
                     "Правильных ответов: {1} из {2}. \n" +
                     "Правильных ответов у проигравшей: {3} из {4}. \n", textBox1.Text,
@@ -176,14 +202,14 @@ namespace Game_WhoIsWho_MVP
                 }
                 else if (firstCommandCorrectAnswers < secondCommandCorrectAnswers)
                 {
-                    label3.Text = String.Format("Викторина закончена. \n" +
+                    label4.Text = String.Format("Викторина закончена. \n" +
                     "Выйграла команда: {0} \n" +
                     "Правильных ответов: {1} из {2}. \n" +
                     "Правильных ответов у проигравшей: {3} из {4}. \n", textBox2.Text,
                     (quectionCount / 2) - secondCommandWrongAnswers, (quectionCount / 2),
                     (quectionCount / 2) - firstCommandWrongAnswers, (quectionCount / 2));
                 }
-                else label3.Text = "Победила дружба! :)";
+                else label4.Text = "Победила дружба! :)";
 
                 button3.Text = "Начать викторину";
 

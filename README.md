@@ -52,19 +52,27 @@
 7.  /AuthorsPage.resx/ - программа, в которой автоматически прописаны команды для работы режима "Авторы" (а именно ресурсов, которые данный режим использует)
 8.  /Form1.cs/- программа, в которой прописаны команды для работы режима "Главное меню"
 9.  /Form1.Designer.cs/ - программа, в которой автоматически прописаны команды для работы режима "Главное меню"(а именно дизайна данного режима)
-10.  /Game_WholsWho_MVP. csproj/ - проект
-11.  /Game_WholsWho_MVP.sIn/ - solution проекта
-12.  /CommandModePage.cs/- программа, в которой прописаны команды для работы режима "Командный режим"
-13.  /CommandModePage.Designer.cs/ - программа, в которой автоматически прописаны команды для работы режима "Командный режим"(а именно дизайна данного режима)
-14.  /CommandModePage.resx/ - программа, в которой автоматически прописаны команды для работы режима "Командный режим" (а именно ресурсов, которые данный режим использует)
-15.  /Program.cs/ - программа, в которой прописана главная точка входа для приложения.
-16.  /questionsForTheCommandModePage/ - текстовый файл, в котором прописаны вопросы для командного режима
-17.  /questionsForTheSingleModePage/ - текстовый файл, в котором прописаны вопросы для одиночного режима
-18.  /questionsForTrueFalseModePage/ - текстовый файл, в котором прописаны вопросы для режима "Правда/ложь"
-19.  /Resources.Designer.cs/
-20.  /Resources.resx/
-21.  /RulePage.cs/
-22.  /RulePage.Designer.cs/
-23.  /SingleModePage.cs/
-24.  /SingleModePage.
-25.  /Designer.cs/
+10.  /Form1.resx/ - программа, в которой автоматически прописаны команды для работы режима "Авторы" (а именно ресурсов, которые данный режим использует)
+11.  /Game_WholsWho_MVP. csproj/ - проект
+12.  /Game_WholsWho_MVP.sIn/ - solution проекта
+13.  /CommandModePage.cs/- программа, в которой прописаны команды для работы режима "Командный режим"
+14.  /CommandModePage.Designer.cs/ - программа, в которой автоматически прописаны команды для работы режима "Командный режим"(а именно дизайна данного режима)
+15.  /CommandModePage.resx/ - программа, в которой автоматически прописаны команды для работы режима "Командный режим" (а именно ресурсов, которые данный режим использует)
+16.  /Program.cs/ - программа, в которой прописана главная точка входа для приложения.
+17.  /questionsForTheCommandModePage/ - текстовый файл, в котором прописаны вопросы для командного режима
+18.  /questionsForTheSingleModePage/ - текстовый файл, в котором прописаны вопросы для одиночного режима
+19.  /questionsForTrueFalseModePage/ - текстовый файл, в котором прописаны вопросы для режима "Правда/ложь"
+20.  /Resources.Designer.cs/
+21.  /Resources.resx/
+22.  /RulePage.cs/
+23.  /RulePage.Designer.cs/
+24.  /RulePage.resx/
+25.  /SingleModePage.cs/
+26.  /SingleModePage.Designer.cs/
+27.  /SingleModePage.resx/
+28.  /StartPage.cs/
+29.  /StartPage.Designer.cs
+30.  /StartPage.resx/
+31.  /TrueFalseModePage.cs/
+32.  /TrueFalseModePage.Designer.cs/
+33.  /TrueFalseModePage.resx/

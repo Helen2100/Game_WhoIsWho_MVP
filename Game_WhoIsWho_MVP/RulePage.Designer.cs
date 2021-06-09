@@ -29,6 +29,7 @@ namespace Game_WhoIsWho_MVP
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RulePage));
             this.backBtn = new System.Windows.Forms.Button();
             this.txtRule = new System.Windows.Forms.Label();
             this.NameWindow = new System.Windows.Forms.Label();
@@ -54,13 +55,13 @@ namespace Game_WhoIsWho_MVP
             // txtRule
             // 
             this.txtRule.AutoSize = true;
-            this.txtRule.Font = new System.Drawing.Font("Segoe Print", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.txtRule.Font = new System.Drawing.Font("Segoe Print", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtRule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.txtRule.Location = new System.Drawing.Point(485, 190);
+            this.txtRule.Location = new System.Drawing.Point(108, 110);
             this.txtRule.Name = "txtRule";
-            this.txtRule.Size = new System.Drawing.Size(295, 58);
+            this.txtRule.Size = new System.Drawing.Size(1140, 473);
             this.txtRule.TabIndex = 11;
-            this.txtRule.Text = "Делай то и то";
+            this.txtRule.Text = resources.GetString("txtRule.Text");
             // 
             // NameWindow
             // 
